@@ -79,27 +79,30 @@ foreach ($company in $companies.GetEnumerator()) {
 		$response = Invoke-RestMethod "https://eprijava.tax.gov.me/TaxisPortal/FinancialStatement/Details?rbr=$($no)" -Method 'POST' -Headers $headers
 
 		# Izvjestaji ce biti sacuvani u formatu: <PIB>-<GODINA>.htm
-		Out-File -FilePath "./$($company.Value)\$($pib)-$($year).htm" -InputObject $response -Encoding UTF8
+		Out-File -FilePath "./$($company.Value)\$($pib)-$($year).html" -InputObject $response -Encoding UTF8
 
 		Write-Host "`nIme firme u obradi u sledecem redu"
 		Write-Host $company.Value
-		Write-Host "./$company.Value\$pib-$year.htm"
+		Write-Host "./$company.Value\$pib-$year.html"
 
 		$imeFirme = $company.Value
 
-		$content = [IO.File]::ReadAllText("./$imeFirme\$pib-$year.htm")
+		$content = [IO.File]::ReadAllText("./$imeFirme/$pib-$year.html")
 
 		# Pretraga podatka: totalIncome
 		$totalIncome = 0
-		$pattern = '(?:(PRIHODI|Prihodi).+\r\n?|\n.+(201).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<totalIncome>\d+)(?:</td>)'
+		$pattern = '<td style="text-align: center;">201<\/td>\s*<td><\/td>\s*<td style="text-align: right; padding-right: 8px">(?<totalIncome>\d+)<\/td>'
 		$result = [regex]::Matches($content, $pattern)
+
 		if ($result -ne $null) {
 			$totalIncome = $result[0].Groups['totalIncome'].Value -as [int]
 		}
 
 		# Pretraga podatka: profit
 		$profit = 0
-		$pattern = '(?:(Neto sveobuhvatni|NETO REZULTAT).+\r\n?|\n.+(260|232).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<profit>\d+)(?:</td>)'
+#		$pattern = '(?:(Neto sveobuhvatni|NETO REZULTAT).+\r\n?|\n.+(260|232).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<profit>\d+)(?:</td>)'
+		$pattern = '<td style="text-align: left">IX. Neto sveobuhvatni rezultat \(248\+259\)<\/td>\s*<td style="text-align: center;">260<\/td>\s*<td><\/td>\s*<td style="text-align: right; padding-right: 8px">(?<profit>\d+)<\/td>'
+
 		$result = [regex]::Matches($content, $pattern)
 		if ($result -ne $null) {
 			$profit = $result[0].Groups['profit'].Value -as [int]
@@ -107,7 +110,9 @@ foreach ($company in $companies.GetEnumerator()) {
 
 		# Pretraga podatka: employeeCount
 		$employeeCount = 0
-		$pattern = '(?:(broj zaposlenih).+\r\n?|\n.+(002).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<employeeCount>\d+)(?:</td>)'
+#		$pattern = '(?:(broj zaposlenih).+\r\n?|\n.+(002).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<employeeCount>\d+)(?:</td>)'
+		$pattern = '<td style="text-align: left">Prosje\?an broj zaposlenih \(ukupan broj zaposlenih krajem svakog mjeseca podijeljen sa brojem mjeseci\)<\/td>\s*<td style="text-align: center;">001<\/td>\s*<td><\/td>\s*<td style="text-align: right; padding-right: 8px">(?<employeeCount>\d+)<\/td>'
+
 		$result = [regex]::Matches($content, $pattern)
 		if ($result -ne $null) {
 			$employeeCount = $result[0].Groups['employeeCount'].Value -as [int]
@@ -121,7 +126,8 @@ foreach ($company in $companies.GetEnumerator()) {
 		$netPayCosts = 0
 		$averagePay = 0
 
-		$pattern = '(?:(naknada zarada).+\r\n?|\n.+(212).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<netPayCosts>\d+)(?:</td>)'
+#		$pattern = '(?:(naknada zarada).+\r\n?|\n.+(212).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<netPayCosts>\d+)(?:</td>)'
+		$pattern = '<td style="text-align: left">a\) Neto troškovi zarada, naknada zarada i lični rashodi<\/td>\s*<td style="text-align: center;">212<\/td>\s*<td><\/td>\s*<td style="text-align: right; padding-right: 8px">(?<netPayCosts>\d+)<\/td>'
 		$result = [regex]::Matches($content, $pattern)
 		if ($result -ne $null) {
 			$netPayCosts = $result[0].Groups['netPayCosts'].Value -as [int]
