@@ -81,7 +81,13 @@ foreach ($company in $companies.GetEnumerator()) {
 		# Izvjestaji ce biti sacuvani u formatu: <PIB>-<GODINA>.htm
 		Out-File -FilePath "./$($company.Value)\$($pib)-$($year).htm" -InputObject $response -Encoding UTF8
 
-		$content = [IO.File]::ReadAllText("./$company.Value\$pib-$year.htm")
+		Write-Host "`nIme firme u obradi u sledecem redu"
+		Write-Host $company.Value
+		Write-Host "./$company.Value\$pib-$year.htm"
+
+		$imeFirme = $company.Value
+
+		$content = [IO.File]::ReadAllText("./$imeFirme\$pib-$year.htm")
 
 		# Pretraga podatka: totalIncome
 		$totalIncome = 0
@@ -101,11 +107,15 @@ foreach ($company in $companies.GetEnumerator()) {
 
 		# Pretraga podatka: employeeCount
 		$employeeCount = 0
-		$pattern = '(?:(broj zaposlenih).+\r\n?|\n.+(001).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<employeeCount>\d+)(?:</td>)'
+		$pattern = '(?:(broj zaposlenih).+\r\n?|\n.+(002).+\r\n?|\n.+\r\n?|\n[^>]+>)(?<employeeCount>\d+)(?:</td>)'
 		$result = [regex]::Matches($content, $pattern)
 		if ($result -ne $null) {
 			$employeeCount = $result[0].Groups['employeeCount'].Value -as [int]
 		}
+
+		Write-Host 'podaci ucitani - - -- -- - -- -- -'
+		Write-Host $totalIncome
+		Write-Host $employeeCount
 
 		# Pretraga podatka: netPayCosts i kalkulacija averagePay
 		$netPayCosts = 0
