@@ -32,9 +32,11 @@ $companies.Add("03373398", "Quantox Technology")
 $companies.Add("03216446", "Ooblee")
 $companies.Add("03209296", "BIXBIT")
 $companies.Add("03367053", "GoldBear Technologies")
+$companies.Add("03421198", "G5 Entertainment")
+$companies.Add("03428184", "Tungsten Montenegro")
 
 # Formiranje CSV fajla za smjestanje rezultata
-Set-Content -Path "./Results.csv" -Value '"Company","Year","TotalIncome","Profit","EmployeeCount","NetPayCosts","AveragePay"'
+Set-Content -Path "./Results.csv" -Value '"name","Year","totalIncome","profit","employeeCount","netPayCosts","averagePay"'
 
 # Definisanje header-a zbog provizornog ID-a sesije
 $headers = New-Object "System.Collections.Generic.Dictionary[[String],[String]]"
