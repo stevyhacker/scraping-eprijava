@@ -36,6 +36,7 @@ $companies.Add("03421198", "G5 Entertainment")
 $companies.Add("03428184", "Tungsten Montenegro")
 $companies.Add("03110222", "BGS Consulting")
 $companies.Add("03413381", "Artec 3D Adriatica")
+$companies.Add("03413616", "Customertimes Montenegro")
 
 # Formiranje CSV fajla za smjestanje rezultata
 Set-Content -Path "./Results.csv" -Value '"name","Year","totalIncome","profit","employeeCount","netPayCosts","averagePay"'
