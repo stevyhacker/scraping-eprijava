@@ -1,0 +1,2755 @@
+
+<div id="portal-center">
+    <style scoped>
+        .FinStateTable {
+            border: 1px solid gainsboro;
+            width: 710px;
+        }
+
+            .FinStateTable tr td {
+                border: 1px solid whitesmoke;
+                padding: 0 0 0 5px;
+            }
+
+            .FinStateTable label {
+                color: gray;
+                width: 100%;
+                padding-right: 8px;
+                display: block;
+            }
+
+        .FinStateTableItems {
+            border: 1px solid gainsboro;
+        }
+
+            .FinStateTableItems tr td {
+                border: 1px solid whitesmoke;
+            }
+
+            .FinStateTableItems label {
+                color: gray;
+                text-align: left;
+            }
+
+            .FinStateTableItems thead tr th {
+                text-align: center;
+                color: black;
+                background-color: whitesmoke;
+            }
+
+        label {
+            color: gray;
+            text-align: left;
+        }
+
+        .k-state-active {
+            color: black;
+        }
+    </style>
+
+    <h4></h4>
+
+    <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+
+
+    <div id="FinancialStatementHeader" style="width: 710px;">
+        <table class="FinStateTable" cellpadding="2" cellspacing="0">
+            <tr>
+                <td style="width: 25%;"><label>Godina</label> <span class="display">2023</span></td>
+                <td style="width: 25%;"><label>Od datuma</label> <span class="display">01.01.2023</span></td>
+                <td style="width: 25%;"><label>Do datuma</label> <span class="display">31.12.2023</span></td>
+                <td style="width: 25%;"><label>Broj zahtjeva</label> 91445/2023</td>
+            </tr>
+            <tr>
+                <td colspan="4"><label>Naziv</label> <span class="display">D.O.O. &quot;FSTR&quot; - PODGORICA</span></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <label>Sjedište</label>
+                        <div><span class="display">BULEVAR DŽORDŽA VAŠINGTONA BR. 98 , PODGORICA, CRNA GORA</span></div>
+                </td>
+
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label>Adresa</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Šifra djelatnosti</label> <span class="display">6201</span></td>
+                <td>
+                    <label>Matični broj</label>                         <div><span class="display">03424804</span></div>
+                </td>
+                <td><label>Tip promjene</label> <strong>Nema</strong></td>
+                <td><label>Konsolidovani iskaz</label> <span class="display">    Ne
+</span></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Naziv lica koje je sastavilo iskaz</label> <span class="display">NATALIA GERASIMOVA</span></td>
+                <td><label>JMBG</label> - </td>
+                <td><label>e-mail</label> -</td>
+            </tr>
+            <tr>
+                <td colspan="2"><label>Ime ovlašćenog lica</label> <span class="display">MIKHAIL</span></td>
+                <td><label>Prezime ovlašćenog lica</label> <span class="display">DADAEV</span></td>
+                <td><label>JMBG</label> - </td>
+            </tr>
+            <tr>
+                <td colspan="2"><label> za iskaz o tokovima gotovine</label> <strong>DirektnaMetoda</strong></td>
+                <td colspan="2"><label> sastavljanja iskaza</label> <span class="display">21.03.2024</span></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="tabs_container" style="width: 710px; background-color: #F5EFD7; background-image: none">
+        <ul id="tabs">
+            <li class="k-state-active">Bilans stanja</li>
+            <li>Bilans uspjeha</li>
+            <li>Tokovi got.</li>
+            <li>Promjene na kap.</li>
+            <li>Statistički aneks</li>
+            <li>Obračun amort.</li>
+            <li>Napomene</li>
+        </ul>
+        <div id="tab1" class="tab_content">
+                <h4 style="text-align: center">ISKAZ O FINANSIJSKOJ POZICIJI /BILANS STANJA/</h4>
+          
+                      <button type="button" id="btnFSPrint1" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/Print'+'?rbr='+'91445/2023'+
+                '&tip='+'BilansStanja';">
+                ŠTAMPA
+            </button>
+            <table id="TBilansStanja" class="FinStateTableItems" cellpadding="2" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th style="width: 15%">Grupa računa, račun</th>
+                        <th style="width: 30%">Pozicija</th>
+                        <th style="width: 5%">Redni Broj</th>
+                        <th style="width: 10%">Napomena</th>
+                        <th style="width: 15%">Tekuća godina</th>
+                            <th style="width: 15%">Prethodna godina - krajnje stanje</th>
+                            <th style="width: 15%">Prethodna godina - početno stanje</th>
+                    </tr>
+                </thead>
+                    
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">A K T I V A</td>
+                        <td style="text-align: center;"></td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">00</td>
+                        <td style="text-align: left;">A. NEUPLAĆENI UPISANI KAPITAL</td>
+                        <td style="text-align: center;">001</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">B. STALNA IMOVINA ( 003+008+016 )</td>
+                        <td style="text-align: center;">002</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">25058</td>
+                        <td style="text-align: right; padding-right: 8px">3039</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">01</td>
+                        <td style="text-align: left;">I. NEMATERIJALNA ULAGANJA (004 do 007)</td>
+                        <td style="text-align: center;">003</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">010</td>
+                        <td style="text-align: left;">1. Ulaganja u razvoj</td>
+                        <td style="text-align: center;">004</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">011 i 014</td>
+                        <td style="text-align: left;">2. Koncesije, patenti, licence i slična prava i ostala nematerijalna ulaganja</td>
+                        <td style="text-align: center;">005</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">012</td>
+                        <td style="text-align: left;">3. Goodwill</td>
+                        <td style="text-align: center;">006</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">016 i 015</td>
+                        <td style="text-align: left;">4. Avansi za nematerijalna ulaganja i nematerijalna ulaganja u pripremi</td>
+                        <td style="text-align: center;">007</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">II. NEKRETNINE, POSTROJENJA, OPREMA I BIOLOŠKA SREDSTVA (009+010+011+015)</td>
+                        <td style="text-align: center;">008</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">25058</td>
+                        <td style="text-align: right; padding-right: 8px">3039</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">020 i 022</td>
+                        <td style="text-align: left;">1. Zemljište i objekti</td>
+                        <td style="text-align: center;">009</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">023</td>
+                        <td style="text-align: left;">2. Postrojenja i oprema</td>
+                        <td style="text-align: center;">010</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">3407</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">3. Ostala ugrađena oprema, alati i oprema (012+013+014)</td>
+                        <td style="text-align: center;">011</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">21651</td>
+                        <td style="text-align: right; padding-right: 8px">3039</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">024</td>
+                        <td style="text-align: left;">3.1. Investicione nekretnine</td>
+                        <td style="text-align: center;">012</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">021 i 025</td>
+                        <td style="text-align: left;">3.2. Biloška sredstva</td>
+                        <td style="text-align: center;">013</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">026 i 029</td>
+                        <td style="text-align: left;">3.3. Ostala nepomenuta materijalna stalna sredstva</td>
+                        <td style="text-align: center;">014</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">21651</td>
+                        <td style="text-align: right; padding-right: 8px">3039</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">028 i 027</td>
+                        <td style="text-align: left;">4. Avansi za nekretnine, postrojenja, opremu i biološka sredstva i nekretnine, postrojenja, oprema i biološka sredstva u pripremi</td>
+                        <td style="text-align: center;">015</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">III DUGOROČNI FINANSIJSKI PLASMANI I DUGOROČNA POTRAŽIVANJA (017 do 023)</td>
+                        <td style="text-align: center;">016</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">030, 039(dio)</td>
+                        <td style="text-align: left;">1. Učešća u kapitalu zavisnih pravnih lica</td>
+                        <td style="text-align: center;">017</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">033(dio),039(dio)</td>
+                        <td style="text-align: left;">2. Dugoročni krediti matičnom i zavisnim pravnim licima</td>
+                        <td style="text-align: center;">018</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">031(dio),032(dio),039(dio)</td>
+                        <td style="text-align: left;">3. Učešća u kapitalu kod pravnih lica (sem zavisnih pravnih lica)</td>
+                        <td style="text-align: center;">019</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">033(dio),039(dio)</td>
+                        <td style="text-align: left;">4. Dugoročni krediti pravnim licima kod kojih postoji učešće u kapitalu (sem zavisnih pravnih lica)</td>
+                        <td style="text-align: center;">020</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">031(dio),032(dio)</td>
+                        <td style="text-align: left;">5. Učešća u kapitalu koja se vrednuju metodom učešća</td>
+                        <td style="text-align: center;">021</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">032(dio),034,035,036,039(dio)</td>
+                        <td style="text-align: left;">6. Dugoročna finansijska ulaganja (dati krediti i hartije od vrijednosti)</td>
+                        <td style="text-align: center;">022</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">038,039(dio)</td>
+                        <td style="text-align: left;">7. Ostali dugoročni finansijski plasmani i potraživanja</td>
+                        <td style="text-align: center;">023</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">288</td>
+                        <td style="text-align: left;">C. ODLOŽENA PORESKA SREDSTVA</td>
+                        <td style="text-align: center;">024</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">D. OBRTNA SREDSTVA (026+031+039+043+044)</td>
+                        <td style="text-align: center;">025</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">18316</td>
+                        <td style="text-align: right; padding-right: 8px">54822</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">I. ZALIHE (027 do 030)</td>
+                        <td style="text-align: center;">026</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1030</td>
+                        <td style="text-align: right; padding-right: 8px">3710</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align: left;">1. Zalihe materijala (materijal za izradu, rezervni delovi, sitan inventar i auto gume)</td>
+                        <td style="text-align: center;">027</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">11</td>
+                        <td style="text-align: left;">2. Nedovršena proizvodnja</td>
+                        <td style="text-align: center;">028</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">12 i 13</td>
+                        <td style="text-align: left;">3. Gotovi proizvodi i roba</td>
+                        <td style="text-align: center;">029</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">15</td>
+                        <td style="text-align: left;">4. Dati avansi</td>
+                        <td style="text-align: center;">030</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1030</td>
+                        <td style="text-align: right; padding-right: 8px">3710</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">II. KRATKOROČNA POTRAŽIVANJA (032 do 035)</td>
+                        <td style="text-align: center;">031</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">3043</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">202,203,209(dio)</td>
+                        <td style="text-align: left;">1. Potraživanja od kupaca</td>
+                        <td style="text-align: center;">032</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">3043</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">200,209(dio)</td>
+                        <td style="text-align: left;">2. Potraživanja od matičnog i zavisnih pravnih lica</td>
+                        <td style="text-align: center;">033</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">201,209(dio)</td>
+                        <td style="text-align: left;">3. Potraživanja od ostalih povezanih lica</td>
+                        <td style="text-align: center;">034</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">4. Ostala potraživanja (036+037+038)</td>
+                        <td style="text-align: center;">035</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">0</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">223</td>
+                        <td style="text-align: left;">4.1. Potraživanja za više plaćen porez na dobit</td>
+                        <td style="text-align: center;">036</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">27</td>
+                        <td style="text-align: left;">4.2. Potraživanja po osnovu poreza na dodatu vrijednost</td>
+                        <td style="text-align: center;">037</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">21, 22,osim 223</td>
+                        <td style="text-align: left;">4.3. Ostala nepomenuta potraživanja</td>
+                        <td style="text-align: center;">038</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">III. KRATKOROČNI FINANSIJSKI PLASMANI (040 do 042)</td>
+                        <td style="text-align: center;">039</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">236(dio)</td>
+                        <td style="text-align: left;">1. Učešće u kapitalu zavisnih pravnih lica namijenjeno trgovanju</td>
+                        <td style="text-align: center;">040</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">237</td>
+                        <td style="text-align: left;">2. Otkupljene sopstvene akcije i otkupljeni sopstveni udjeli</td>
+                        <td style="text-align: center;">041</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">23 osim 236(dio) i osim 237</td>
+                        <td style="text-align: left;">3. Ostali kratkoročni finansijski plasmani</td>
+                        <td style="text-align: center;">042</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">24</td>
+                        <td style="text-align: left;">IV. GOTOVINA NA RAČUNIMA I U BLAGAJNI</td>
+                        <td style="text-align: center;">043</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">14243</td>
+                        <td style="text-align: right; padding-right: 8px">51112</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">04</td>
+                        <td style="text-align: left;">V. STALNA SREDSTVA NAMIJENJENA PRODAJI I SREDSTVA POSLOVANJA KOJE JE OBUSTAVLJENO</td>
+                        <td style="text-align: center;">044</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">28 osim 288</td>
+                        <td style="text-align: left;">E. AKTIVNA VREMENSKA RAZGRANIČENJA</td>
+                        <td style="text-align: center;">045</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">F. UKUPNA AKTIVA (001+002+024+025+045)</td>
+                        <td style="text-align: center;">046</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">43374</td>
+                        <td style="text-align: right; padding-right: 8px">57861</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">PASIVA</td>
+                        <td style="text-align: center;"></td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">A. KAPITAL (102+103+104+105+111+116)</td>
+                        <td style="text-align: center;">101</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">76899</td>
+                        <td style="text-align: right; padding-right: 8px">47286</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">30</td>
+                        <td style="text-align: left;">I. OSNOVNI KAPITAL</td>
+                        <td style="text-align: center;">102</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1</td>
+                        <td style="text-align: right; padding-right: 8px">1</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">31</td>
+                        <td style="text-align: left;">II. NEUPLAĆENI UPISANI KAPITAL</td>
+                        <td style="text-align: center;">103</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">320</td>
+                        <td style="text-align: left;">III. EMISIONA PREMIJA</td>
+                        <td style="text-align: center;">104</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">IV. REZERVE (106+107+108+109-110)</td>
+                        <td style="text-align: center;">105</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">321</td>
+                        <td style="text-align: left;">1. Zakonske rezerve</td>
+                        <td style="text-align: center;">106</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">322(dio)</td>
+                        <td style="text-align: left;">2. Statutarne rezerve</td>
+                        <td style="text-align: center;">107</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">322(dio)</td>
+                        <td style="text-align: left;">3. Druge rezerve</td>
+                        <td style="text-align: center;">108</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">330 i potr.saldo rač. 331, 332, 333, 334, 335, 336 i 337</td>
+                        <td style="text-align: left;">4. Pozitivne revalorizacione rezerve i nerealizovani dobici po osnovu finansijskih sredstava i drugih komponenti ostalog sveobuhvatnog rezultata</td>
+                        <td style="text-align: center;">109</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">dugov.saldo rač. 331, 332, 333, 334, 335, 336 i 337</td>
+                        <td style="text-align: left;">5. Negativne revalorizacione rezerve i nerealizovani gubici po osnovu finansijskih sredstava i drugih komponenti ostalog sveobuhvatnog rezultata</td>
+                        <td style="text-align: center;">110</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">VI. NERASPOREDJENI DOBITAK ILI GUBITAK (112+113-114-115)</td>
+                        <td style="text-align: center;">111</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">76898</td>
+                        <td style="text-align: right; padding-right: 8px">47285</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">340</td>
+                        <td style="text-align: left;">1. Neraspoređeni dobitak ranijih godina</td>
+                        <td style="text-align: center;">112</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">47286</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">341</td>
+                        <td style="text-align: left;">2. Neraspoređeni dobitak tekuće godine</td>
+                        <td style="text-align: center;">113</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">29612</td>
+                        <td style="text-align: right; padding-right: 8px">47285</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">350</td>
+                        <td style="text-align: left;">3. Gubitak ranijih godina</td>
+                        <td style="text-align: center;">114</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">351</td>
+                        <td style="text-align: left;">4. Gubitak tekuće godine</td>
+                        <td style="text-align: center;">115</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">VIII. UČEŠĆE KOJE NE OBEZBJEĐUJE KONTROLU</td>
+                        <td style="text-align: center;">116</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">B. DUGOROČNA REZERVISANJA I DUGOROČNE OBAVEZE (118+122)</td>
+                        <td style="text-align: center;">117</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">I. DUGOROČNA REZERVISANJA (119 do 121)</td>
+                        <td style="text-align: center;">118</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">404(dio)</td>
+                        <td style="text-align: left;">1. Rezervisanja za naknade i druge beneficije zaposlenih</td>
+                        <td style="text-align: center;">119</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">400(dio)</td>
+                        <td style="text-align: left;">2. Rezervisanja za troškove u garantnom roku</td>
+                        <td style="text-align: center;">120</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">40, sem 400 i 404</td>
+                        <td style="text-align: left;">3. Ostala dugoročna rezervisanja</td>
+                        <td style="text-align: center;">121</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">41</td>
+                        <td style="text-align: left;">II. DUGOROČNE OBAVEZE (123+124)</td>
+                        <td style="text-align: center;">122</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">414, 415</td>
+                        <td style="text-align: left;">1. Dugoročni krediti</td>
+                        <td style="text-align: center;">123</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">41 bez 414, 415</td>
+                        <td style="text-align: left;">2. Ostale dugoročne obaveze</td>
+                        <td style="text-align: center;">124</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">498</td>
+                        <td style="text-align: left;">C. ODLOŽENE PORESKE OBAVEZE</td>
+                        <td style="text-align: center;">125</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">495(dio)</td>
+                        <td style="text-align: left;">D. DUGOROČNI ODLOŽENI PRIHODI I PRIMLJENE DONACIJE</td>
+                        <td style="text-align: center;">126</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">E. KRATKOROČNA REZERVISANJA I KRATKOROČNE OBAVEZE (128+129)</td>
+                        <td style="text-align: center;">127</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">-33525</td>
+                        <td style="text-align: right; padding-right: 8px">10575</td>
+                        <td style="text-align: right; padding-right: 8px">0</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">467</td>
+                        <td style="text-align: left;">I KRATKOROČNA REZERVISANJA</td>
+                        <td style="text-align: center;">128</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">II KRATKOROČNE OBAVEZE (130 do 137)</td>
+                        <td style="text-align: center;">129</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">-33525</td>
+                        <td style="text-align: right; padding-right: 8px">10575</td>
+                        <td style="text-align: right; padding-right: 8px">0</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">422(dio), 423(dio), 424(dio), 425(dio),426 i 429(dio)</td>
+                        <td style="text-align: left;">1. Obaveze po osnovu kredita i zajmova od lica koja nisu kreditne institucije</td>
+                        <td style="text-align: center;">130</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">239</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">422(dio), 423(dio), 424(dio), 425(dio) i 429(dio)</td>
+                        <td style="text-align: left;">2. Obaveze po osnovu kredita od kreditnih institucija</td>
+                        <td style="text-align: center;">131</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">430</td>
+                        <td style="text-align: left;">3. Primljeni avansi, depoziti i kaucije</td>
+                        <td style="text-align: center;">132</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">433, 434, 440-449</td>
+                        <td style="text-align: left;">4. Obaveze prema dobavljačima</td>
+                        <td style="text-align: center;">133</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">2879</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">439(dio)</td>
+                        <td style="text-align: left;">5. Obaveze po mjenicama</td>
+                        <td style="text-align: center;">134</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">420 i 431</td>
+                        <td style="text-align: left;">6. Obaveze prema matičnom i zavisnim pravnim licima</td>
+                        <td style="text-align: center;">135</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">421 i 432</td>
+                        <td style="text-align: left;">7. Obaveze prema ostalim povezanim licima</td>
+                        <td style="text-align: center;">136</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">8. Ostale obaveze iz poslovanja i ostale kratkoročne obaveze (138 do 142)</td>
+                        <td style="text-align: center;">137</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">-36404</td>
+                        <td style="text-align: right; padding-right: 8px">10336</td>
+                        <td style="text-align: right; padding-right: 8px">0</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">439(dio)</td>
+                        <td style="text-align: left;">8.1. Ostale obaveze iz poslovanja</td>
+                        <td style="text-align: center;">138</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">45 i 46</td>
+                        <td style="text-align: left;">8.2. Ostale kratkoročne obaveze</td>
+                        <td style="text-align: center;">139</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">-38953</td>
+                        <td style="text-align: right; padding-right: 8px">5150</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">47,48 osim 481</td>
+                        <td style="text-align: left;">8.3. Obaveze po osnovu poreza na dodatu vrijednost i ostalih javnih prihoda</td>
+                        <td style="text-align: center;">140</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">481</td>
+                        <td style="text-align: left;">8.4. Obaveze po osnovu poreza na dobit</td>
+                        <td style="text-align: center;">141</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">2549</td>
+                        <td style="text-align: right; padding-right: 8px">5186</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">427</td>
+                        <td style="text-align: left;">8.5. Obaveze po osnovu sredstava namijenjenih prodaji i sredstava poslovanja koje je obustavljeno</td>
+                        <td style="text-align: center;">142</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">490, 491, 494, 495(dio), 496, 497 i 499</td>
+                        <td style="text-align: left;">F. PASIVNA VREMENSKA RAZGRANIČENJA</td>
+                        <td style="text-align: center;">143</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left;">G. UKUPNA PASIVA (101+117+125+126+127+143)</td>
+                        <td style="text-align: center;">144</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">43374</td>
+                        <td style="text-align: right; padding-right: 8px">57861</td>
+                        <td style="text-align: right; padding-right: 8px">0</td>
+                    </tr>
+                  </table>
+
+
+          
+        </div>
+
+        <div id="tab2" class="tab_content">
+                <h4 style="text-align: center">ISKAZ I UKUPNOM REZULTATU /BILANS USPJEHA/</h4>
+          
+                     <button type="button" id="btnFSPrint1" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/Print'+'?rbr='+'91445/2023'+
+                '&tip='+'BilansUspjeha';">
+                ŠTAMPA
+            </button>
+            <table id="TBilansUspjeha" class="FinStateTableItems" cellpadding="2" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th style="width: 15%">Grupa računa, račun</th>
+                        <th style="width: 30%">Pozicija</th>
+                        <th style="width: 5%">Redni Broj</th>
+                        <th style="width: 10%">Napomena</th>
+                        <th style="width: 15%">Tekuća godina</th>                        
+                        <th style="width: 15%">Prethodna godina</th>
+                    
+                    </tr>
+                </thead>
+                   
+                    <tr>
+                        <td style="text-align: center;">60 i 61</td>
+                        <td style="text-align: left">1. Prihodi od prodaje - neto prihod</td>
+                        <td style="text-align: center;">201</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1439348</td>
+                        <td style="text-align: right; padding-right: 8px">409664</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">630 i 631</td>
+                        <td style="text-align: left">2. Promjena vrijednosti zaliha gotovih proizvoda i nedovršene proizvodnje</td>
+                        <td style="text-align: center;">202</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">62</td>
+                        <td style="text-align: left">3. Prihodi od aktiviranja učinaka i robe</td>
+                        <td style="text-align: center;">203</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">4. Ostali prihodi iz poslovanja (205 do 207)</td>
+                        <td style="text-align: center;">204</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">64 i 65</td>
+                        <td style="text-align: left">a) Ostali prihodi iz redovnog poslovanja</td>
+                        <td style="text-align: center;">205</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">67, 691 i 692</td>
+                        <td style="text-align: left">b) Ostali prihodi iz poslovanja</td>
+                        <td style="text-align: center;">206</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">68, sem 683 i 685</td>
+                        <td style="text-align: left">c) Prihodi po osnovu vrijednosnog usklađivanja imovine</td>
+                        <td style="text-align: center;">207</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">5. Troškovi poslovanja (209+210+210a)</td>
+                        <td style="text-align: center;">208</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">323890</td>
+                        <td style="text-align: right; padding-right: 8px">127898</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">50 i 51</td>
+                        <td style="text-align: left">a) Nabavna vrijednost prodate robe i troškovi materijala</td>
+                        <td style="text-align: center;">209</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">8728</td>
+                        <td style="text-align: right; padding-right: 8px">10661</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">53, 54 (dio) i 55</td>
+                        <td style="text-align: left">b) Ostali troškovi poslovanja (rezervisanja i ostali poslovni rashodi)</td>
+                        <td style="text-align: center;">210</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">304423</td>
+                        <td style="text-align: right; padding-right: 8px">115935</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">540</td>
+                        <td style="text-align: left">c) Amortizacija</td>
+                        <td style="text-align: center;">210a</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">10739</td>
+                        <td style="text-align: right; padding-right: 8px">1302</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">6. Troškovi zarada, naknada zarada i ostali lični rashodi (212+213)</td>
+                        <td style="text-align: center;">211</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1053006</td>
+                        <td style="text-align: right; padding-right: 8px">218750</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">52 (dio)</td>
+                        <td style="text-align: left">a) Neto troškovi zarada, naknada zarada i lični rashodi</td>
+                        <td style="text-align: center;">212</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1009139</td>
+                        <td style="text-align: right; padding-right: 8px">172675</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">b) Troškovi poreza i doprinosa (214 do 216)</td>
+                        <td style="text-align: center;">213</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">43867</td>
+                        <td style="text-align: right; padding-right: 8px">46075</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">52 (dio)</td>
+                        <td style="text-align: left">1/ Troškovi poreza</td>
+                        <td style="text-align: center;">214</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">28905</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">52 (dio)</td>
+                        <td style="text-align: left">2/ Troškovi doprinosa za penzije</td>
+                        <td style="text-align: center;">215</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">6410</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">52 (dio)</td>
+                        <td style="text-align: left">3/ Troškovi doprinosa</td>
+                        <td style="text-align: center;">216</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">43867</td>
+                        <td style="text-align: right; padding-right: 8px">10760</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">7. Rashodi po osnovu vrijednosnog usklađivanja imovine (osim finansijske) (218+219)</td>
+                        <td style="text-align: center;">217</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">580, 581, 582, 589(dio)</td>
+                        <td style="text-align: left">a) Rashodi po osnovu vrijednosnog usklađivanja stalne imovine (osim finansijske)</td>
+                        <td style="text-align: center;">218</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">584, 589(dio)</td>
+                        <td style="text-align: left">b) Rashodi po osnovu vrijednosnog usklađivanja obrtne imovine (osim finansijske)</td>
+                        <td style="text-align: center;">219</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">57, 591 i 592</td>
+                        <td style="text-align: left">8. Ostali rashodi iz poslovanja</td>
+                        <td style="text-align: center;">220</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">-10</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">I. Poslovni rezultat (201+202+203+204-208-211-217-220)</td>
+                        <td style="text-align: center;">221</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">62462</td>
+                        <td style="text-align: right; padding-right: 8px">63016</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">9. Prihodi po osnovu učešća u kapitalu (223 do 225)</td>
+                        <td style="text-align: center;">222</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">660 (dio)</td>
+                        <td style="text-align: left">a) Prihodi po osnovu učešća u kapitalu zavisnih pravnih lica</td>
+                        <td style="text-align: center;">223</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">661 (dio)</td>
+                        <td style="text-align: left">b) Prihodi po osnovu učešća u kapitalu ostalih povezanih pravnih lica</td>
+                        <td style="text-align: center;">224</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">669 (dio)</td>
+                        <td style="text-align: left">c) Prihodi po osnovu učešća u kapitalu nepovezanih pravnih lica</td>
+                        <td style="text-align: center;">225</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">10. Prihodi od ostalih finansijskih ulaganja i zajmova (kamate, kursne razlike i efekti ugovorene zaštite) (227 do 229)</td>
+                        <td style="text-align: center;">226</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1282448</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">660 (dio)</td>
+                        <td style="text-align: left">a) Prihodi od ostalih finansijskih ulaganja i zajmova od matičnog i zavisnih pravnih lica</td>
+                        <td style="text-align: center;">227</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">661 (dio)</td>
+                        <td style="text-align: left">b) Prihodi od ostalih finansijskih ulaganja i zajmova od ostalih povezanih pravnih lica</td>
+                        <td style="text-align: center;">228</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">662 (dio),663 (dio),664 (dio),669 (dio)</td>
+                        <td style="text-align: left">c) Prihodi od ostalih finansijskih ulaganja i zajmova od nepovezanih pravnih lica</td>
+                        <td style="text-align: center;">229</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1282448</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">11. Ostali prihodi po osnovu kamata, kursnih razlika i drugih efekata ugovorene zaštite (231 do 233)</td>
+                        <td style="text-align: center;">230</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">7452</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">660 (dio)</td>
+                        <td style="text-align: left">a) Finansijski prihodi po osnovu tekućih potraživanja od matičnog i zavisnih pravnih lica</td>
+                        <td style="text-align: center;">231</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">661 (dio)</td>
+                        <td style="text-align: left">b) Finansijski prihodi po osnovu tekućih potraživanja od ostalih povezanih pravnih lica</td>
+                        <td style="text-align: center;">232</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">662 (dio),663 (dio),664 (dio),669 (dio)</td>
+                        <td style="text-align: left">c) Finansijski prihodi po osnovu tekućih potraživanja od nepovezanih pravnih lica</td>
+                        <td style="text-align: center;">233</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">7452</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">12. Vrijednosno usklađivanje kratkoročnih finansijskih sredstava i finansijskih ulaganja koji su dio obrtne imovine (235-236)</td>
+                        <td style="text-align: center;">234</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">683, 685</td>
+                        <td style="text-align: left">a) Prihodi po osnovu vrijednosnog usklađivanja kratkoročnih finansijskih sredstava i finansijskih ulaganja koji su dio obrtne imovine</td>
+                        <td style="text-align: center;">235</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">583, 585</td>
+                        <td style="text-align: left">b) Rashodi po osnovu vrijednosnog usklađivanja kratkoročnih finansijskih sredstava i finansijskih ulaganja koji su dio obrtne imovine</td>
+                        <td style="text-align: center;">236</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">13. Rashodi po osnovu kamata, kursnih razlika i drugih efekata ugovorene zaštite (238 do 240)</td>
+                        <td style="text-align: center;">237</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1312749</td>
+                        <td style="text-align: right; padding-right: 8px">17997</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">560</td>
+                        <td style="text-align: left">a) Rashodi po osnovu kamata, kursnih razlika i drugih efekata ugovorene zaštite po osnovu odnosa sa matičnim i zavisnim pravnim licima</td>
+                        <td style="text-align: center;">238</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">561</td>
+                        <td style="text-align: left">b) Rashodi po osnovu kamata, kursnih razlika i drugih efekata ugovorene zaštite po osnovu odnosa sa drugim povezanim licima</td>
+                        <td style="text-align: center;">239</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">562, 563, 564, 569</td>
+                        <td style="text-align: left">c) Rashodi po osnovu kamata, kursnih razlika i drugih efekata ugovorene zaštite po osnovu odnosa sa nepovezanim licima</td>
+                        <td style="text-align: center;">240</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1312749</td>
+                        <td style="text-align: right; padding-right: 8px">17997</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">II. Finansijski rezultat (222+226+230+234–237)</td>
+                        <td style="text-align: center;">241</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">-30301</td>
+                        <td style="text-align: right; padding-right: 8px">-10545</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">III. Rezultat iz redovnog poslovanja prije oporezivanja (221+241)</td>
+                        <td style="text-align: center;">242</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">32161</td>
+                        <td style="text-align: right; padding-right: 8px">52471</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">690 – 590</td>
+                        <td style="text-align: left">IV. Neto rezultat poslovanja koje je obustavljeno</td>
+                        <td style="text-align: center;">243</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">V. Rezultat prije oporezivanja (242+243)</td>
+                        <td style="text-align: center;">244</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">32161</td>
+                        <td style="text-align: right; padding-right: 8px">52471</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">14. Poreski rashod perioda (246+247)</td>
+                        <td style="text-align: center;">245</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">2549</td>
+                        <td style="text-align: right; padding-right: 8px">5186</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">721</td>
+                        <td style="text-align: left">1. Tekući porez na dobit</td>
+                        <td style="text-align: center;">246</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">2549</td>
+                        <td style="text-align: right; padding-right: 8px">5186</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">722</td>
+                        <td style="text-align: left">2. Odloženi poreski rashodi ili prihodi perioda</td>
+                        <td style="text-align: center;">247</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">15. Dobitak ili gubitak nakon oporezivanja (244-245)</td>
+                        <td style="text-align: center;">248</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">29612</td>
+                        <td style="text-align: right; padding-right: 8px">47285</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">VI. Bruto rezultat drugih stavki rezultata /povezanih sa kapitalom / (250 do 257)</td>
+                        <td style="text-align: center;">249</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">330</td>
+                        <td style="text-align: left">1. Promjene revalorizacionih rezervi po osnovu nekretnina, postrojenja, opreme, nematerijalnih ulaganja i bioloških sredstava</td>
+                        <td style="text-align: center;">250</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">331</td>
+                        <td style="text-align: left">2. Promjene nerealizovanih dobitaka i gubitaka po osnovu preračuna finansijskih izvještaja inostranog poslovanja</td>
+                        <td style="text-align: center;">251</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">332</td>
+                        <td style="text-align: left">3. Promjene nerealizovanih dobitaka i gubitaka po osnovu ulaganja u vlasničke instrumente kapitala</td>
+                        <td style="text-align: center;">252</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">333</td>
+                        <td style="text-align: left">4. Promjene aktuarskih dobitaka i gubitaka po osnovu planova definisanih naknada aktuarskih dobitaka (ili gubitaka) u vezi sa definisanim planovima penzionih naknada</td>
+                        <td style="text-align: center;">253</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">334</td>
+                        <td style="text-align: left">5. Promjene učešća u ostalom sveobuhvatnom rezultatu pridruženog društva</td>
+                        <td style="text-align: center;">254</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">335</td>
+                        <td style="text-align: left">6. Promjene nerealizovanih dobitaka i gubitaka po osnovu instrumenata zaštite neto ulaganja u inostrano poslovanje</td>
+                        <td style="text-align: center;">255</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">336</td>
+                        <td style="text-align: left">7. Promjene revalorizacionih rezervi po osnovu hedžinga tokova gotovine</td>
+                        <td style="text-align: center;">256</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">337</td>
+                        <td style="text-align: left">8. Ostale promjene nerealizovanih dobitaka i gubitaka</td>
+                        <td style="text-align: center;">257</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">VII. Odloženi poreski rashodi ili prihodi perioda u vezi sa drugim stavkama rezultata /povezanim sa kapitalom/</td>
+                        <td style="text-align: center;">258</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">VIII. Neto rezultat drugih stavki rezultata povezanih sa kapitalom/ (249-258)</td>
+                        <td style="text-align: center;">259</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">IX. Neto sveobuhvatni rezultat (248+259)</td>
+                        <td style="text-align: center;">260</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">29612</td>
+                        <td style="text-align: right; padding-right: 8px">47285</td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">X. Zarada po akciji</td>
+                        <td style="text-align: center;">261</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">1. Osnovna zarada po akciji</td>
+                        <td style="text-align: center;">262</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">2. Umanjena (razvodnjena) zarada po akciji</td>
+                        <td style="text-align: center;">263</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">XI. Neto rezultat koji pripada vlasnicima matičnog pravnog lica</td>
+                        <td style="text-align: center;">264</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">XII. Neto rezultat koji pripada učešćima koji ne obezbjeđuju kontrolu</td>
+                        <td style="text-align: center;">265</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    
+                    </tr>
+                 </table>
+
+
+         
+        </div>
+
+        <div id="tab3" class="tab_content">
+         
+                  <button type="button" id="btnFSPrint1" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/Print'+'?rbr='+'91445/2023'+
+                '&tip='+'CashFlow';">
+                ŠTAMPA
+            </button>
+            <table id="TIskazOTokovimaGotovine" class="FinStateTableItems" cellpadding="2" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th style="width: 40%">Pozicija</th>
+                        <th style="width: 10%">Redni Broj</th>
+                        <th style="width: 25%">Tekuća godina</th>
+                        <th style="width: 25%">Prethodna godina</th>
+                    </tr>
+                </thead>      
+                     
+                     
+                    <tr>
+                        <td style="text-align: left">A. TOKOVI GOTOVINE IZ POSLOVNIH AKTIVNOSTI</td>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">I. Prilivi gotovine iz poslovnih aktivnosti (1 do 3)</td>
+                        <td style="text-align: center;">301</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">1. Prodaja i primljeni avansi</td>
+                        <td style="text-align: center;">302</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">2. Primljene kamate iz poslovnih aktivnosti</td>
+                        <td style="text-align: center;">303</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">3. Ostali prilivi iz redovnog poslovanja</td>
+                        <td style="text-align: center;">304</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">II. Odlivi gotovine iz poslovnih aktivnosti (1 do 5)</td>
+                        <td style="text-align: center;">305</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">1. Isplate dobavljačima i dati avansi</td>
+                        <td style="text-align: center;">306</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">2. Zarade, naknade zarada i ostali lični rashodi</td>
+                        <td style="text-align: center;">307</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">3. Plaćene kamate</td>
+                        <td style="text-align: center;">308</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">4. Porez na dobitak</td>
+                        <td style="text-align: center;">309</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">5. Plaćanja po osnovu ostalih javnih prihoda</td>
+                        <td style="text-align: center;">310</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">III. Neto tok gotovine iz poslovnih aktivnosti (I-II)</td>
+                        <td style="text-align: center;">311</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">B. TOKOVI GOTOVINE IZ AKTIVNOSTI INVESTIRANJA</td>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">I. Prilivi gotovine iz aktivnosti investiranja (1 do 5)</td>
+                        <td style="text-align: center;">312</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">1. Prodaja akcija i udjela (neto prilivi)</td>
+                        <td style="text-align: center;">313</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">2. Prodaja nematerijalnih ulaganja, nekretnina, postrojenja, opreme i bioloških sredstava</td>
+                        <td style="text-align: center;">314</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">3. Ostali finansijski plasmani (neto prilivi)</td>
+                        <td style="text-align: center;">315</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">4. Primljene kamate iz aktivnosti investiranja</td>
+                        <td style="text-align: center;">316</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">5. Primljene dividende</td>
+                        <td style="text-align: center;">317</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">II. Odlivi gotovine iz aktivnosti investiranja (1 do 3)</td>
+                        <td style="text-align: center;">318</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">1. Kupovina akcija i udjela (neto odlivi)</td>
+                        <td style="text-align: center;">319</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">2. Kupovina nematerijalnih ulaganja, nekretnina, postrojenja, opreme i bioloških sredstava</td>
+                        <td style="text-align: center;">320</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">3. Ostali finansijski plasmani (neto odlivi)</td>
+                        <td style="text-align: center;">321</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">III. Neto tok gotovine iz aktivnosti investiranja (I -II)</td>
+                        <td style="text-align: center;">322</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">C. TOKOVI GOTOVINE IZ AKTIVNOSTI FINANSIRANJA</td>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">I. Prilivi gotovine iz aktivnosti finansiranja (1 do 3)</td>
+                        <td style="text-align: center;">323</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">1. Uvećanje osnovnog kapitala</td>
+                        <td style="text-align: center;">324</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">2. Dugoročni i kratkoročni krediti (neto prilivi)</td>
+                        <td style="text-align: center;">325</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">3. Ostale dugoročne i kratkoročne obaveze</td>
+                        <td style="text-align: center;">326</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">II. Odlivi gotovine iz aktivnosti finansiranja (1 do 4)</td>
+                        <td style="text-align: center;">327</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">1. Otkup sopstvenih akcija i udjela</td>
+                        <td style="text-align: center;">328</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">2. Dugoročni i kratkoročni krediti i ostale obaveze (neto odlivi)</td>
+                        <td style="text-align: center;">329</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">3. Finansijski lizing</td>
+                        <td style="text-align: center;">330</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">4. Isplaćene dividende</td>
+                        <td style="text-align: center;">331</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">III. Neto tok gotovine iz aktivnosti finansiranja (I-II)</td>
+                        <td style="text-align: center;">332</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">D. NETO TOK GOTOVINE (311+322+332)</td>
+                        <td style="text-align: center;">333</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">E. GOTOVINA NA POČETKU IZVJEŠTAJNOG PERIODA</td>
+                        <td style="text-align: center;">334</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">F. POZITIVNE KURSNE RAZLIKE PO OSNOVU PRERAČUNA GOTOVINE</td>
+                        <td style="text-align: center;">335</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">G. NEGATIVNE KURSNE RAZLIKE PO OSNOVU PRERAČUNA GOTOVINE</td>
+                        <td style="text-align: center;">336</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left">H. GOTOVINA NA KRAJU IZVJEŠTAJNOG PERIODA (333+334+335-336)</td>
+                        <td style="text-align: center;">337</td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                  </table>
+
+
+                     
+          
+        </div>
+
+        <div id="tab4" class="tab_content">
+            <div id="DivIskazOPromKapitalu" style="overflow: auto; padding: 0px;">
+                            
+                        <button type="button" id="btnFSPrint1" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/Print'+'?rbr='+'91445/2023'+
+                '&tip='+'IskazOPromenama';">
+                    ŠTAMPA
+                </button>
+                <table id="TIskazOpromjenamaNaKapitalu" class="FinStateTableItems" cellpadding="2" cellspacing="0" style="width: 1500px;">     
+                                                
+                           <thead>
+                        <tr>
+                            <th style="width: 3%">Pozicija</th>
+                            <th>Opis</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Osnovni kapital(grupa 30 bez 309)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Ostali kapital(rn 309)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Neuplaćeni upisani kapital(grupa 31)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Emisiona premija(rn 320)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Rezerve(rn 321, 322)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Revaloriza-cione rezerve(grupa 33)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Neraspoređena dobit(grupa 34)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Gubitak (grupa 35)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Otkupljene sopstvene akcije i udjeli (rn  237)</th>
+                            <th style="width: 3%">Red. br.</th>
+                            <th style="width: 5%">Ukupno (kol. 2+3+4 +5+6+7 +8-9-10)</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>1.</td>
+                            <td style="text-align: left">Stanje na dan 01.01. ______ godine</td>
+                            <td style="text-align: center;">401</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">410</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">419</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">428</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">437</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">446</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">455</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">464</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">473</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">482</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>2.</td>
+                            <td style="text-align: left">Efekti retroaktivne ispravke materijalno zna??ajnih gre??aka i promjena ra??unovodstvenih politika</td>
+                            <td style="text-align: center;">402</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">411</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">420</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">429</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">438</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">447</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">456</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">465</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">474</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">483</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>3.</td>
+                            <td style="text-align: left">Korigovano početno stanje na dan 01.01. ________ godine (r.br. 1+2)</td>
+                            <td style="text-align: center;">403</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">412</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">421</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">430</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">439</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">448</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">457</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">466</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">475</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">484</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>4.</td>
+                            <td style="text-align: left">Neto promjene u _______ godini</td>
+                            <td style="text-align: center;">404</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">413</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">422</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">431</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">440</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">449</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">458</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">467</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">476</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">485</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>5.</td>
+                            <td style="text-align: left">Stanje na dan 31.12. ____________ godine (r.br. 3+4)</td>
+                            <td style="text-align: center;">405</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">414</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">423</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">432</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">441</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">450</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">459</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">468</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">477</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">486</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>6.</td>
+                            <td style="text-align: left">Efekti retroaktivne ispravke materijalno značajnih grešaka i promjena računovodstvenih politika</td>
+                            <td style="text-align: center;">406</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">415</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">424</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">433</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">442</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">451</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">460</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">469</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">478</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">487</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>7.</td>
+                            <td style="text-align: left">Korigovano početno stanje na dan _________ godine (r.br. 5+6)</td>
+                            <td style="text-align: center;">407</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">416</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">425</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">434</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">443</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">452</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">461</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">470</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">479</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">488</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>8.</td>
+                            <td style="text-align: left">Neto promjene u _______ godini</td>
+                            <td style="text-align: center;">408</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">417</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">426</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">435</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">444</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">453</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">462</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">471</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">480</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">489</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>9.</td>
+                            <td style="text-align: left">Stanje na dan 31.12. __________ godine (r.br. 7+8)</td>
+                            <td style="text-align: center;">409</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">418</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">427</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">436</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">445</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">454</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">463</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">472</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">481</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: center;">490</td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                    </table>
+
+
+       
+            </div>
+        </div>
+
+        <div id="tab5" class="tab_content">
+            <button type="button" id="btnFSPrint1" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/Print'+'?rbr='+'91445/2023'+
+                '&tip='+'StatistickiAneks';">
+                ŠTAMPA
+            </button>
+            <table id="TStatistickiAneks" class="FinStateTableItems" cellpadding="2" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th style="width: 15%">Grupa računa, račun</th>
+                        <th style="width: 35%">Pozicija</th>
+                        <th style="width: 10%">Redni Broj</th>
+                        <th style="width: 10%">Napomena</th>
+                        <th style="width: 15%">Tekuća godina</th>
+                        <th style="width: 15%">Prethodna godina</th>
+                    </tr>
+                </thead>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">Prosje?an broj zaposlenih (ukupan broj zaposlenih krajem svakog mjeseca podijeljen sa brojem mjeseci)</td>
+                        <td style="text-align: center;">001</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">16</td>
+                        <td style="text-align: right; padding-right: 8px">4</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">60</td>
+                        <td style="text-align: left">Prihodi od prodaje robe</td>
+                        <td style="text-align: center;">002</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">61</td>
+                        <td style="text-align: left">Prihodi od prodaje proizvoda i usluga</td>
+                        <td style="text-align: center;">003</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1439348</td>
+                        <td style="text-align: right; padding-right: 8px">409664</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">62</td>
+                        <td style="text-align: left">Prihodi od aktiviranja u?inaka i robe</td>
+                        <td style="text-align: center;">004</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">640</td>
+                        <td style="text-align: left">Prihodi od subvencija, prihodi od dotacija i prihodi od donacija</td>
+                        <td style="text-align: center;">005</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">650</td>
+                        <td style="text-align: left">Prihodi od zakupnina</td>
+                        <td style="text-align: center;">006</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">673</td>
+                        <td style="text-align: left">Dobici od prodaje materijala</td>
+                        <td style="text-align: center;">007</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">501</td>
+                        <td style="text-align: left">Nabavna vrijednost prodate robe</td>
+                        <td style="text-align: center;">008</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">511</td>
+                        <td style="text-align: left">Troškovi materijala za izradu</td>
+                        <td style="text-align: center;">009</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">512</td>
+                        <td style="text-align: left">Troškovi ostalog materijala (režijskog)</td>
+                        <td style="text-align: center;">010</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">8728</td>
+                        <td style="text-align: right; padding-right: 8px">10661</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">513</td>
+                        <td style="text-align: left">Troškovi goriva i energije</td>
+                        <td style="text-align: center;">011</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">520</td>
+                        <td style="text-align: left">Troškovi zarada i naknada zarada (bruto)</td>
+                        <td style="text-align: center;">012</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">1009139</td>
+                        <td style="text-align: right; padding-right: 8px">206426</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">529</td>
+                        <td style="text-align: left">Naknada troškova smještaja i ishrane na službenom putu, naknade troškova prevoza na službenom putu</td>
+                        <td style="text-align: center;">013</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">53</td>
+                        <td style="text-align: left">Troškovi proizvodnih usluga</td>
+                        <td style="text-align: center;">014</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">14120</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">531 i 532</td>
+                        <td style="text-align: left">Troškovi transportnih usluga i troškovi usluga održavanja</td>
+                        <td style="text-align: center;">015</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">10</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">533</td>
+                        <td style="text-align: left">Troškovi zakupnina</td>
+                        <td style="text-align: center;">016</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px">14110</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">534 i 535</td>
+                        <td style="text-align: left">Troškovi sajmova i troškovi reklame i propagande</td>
+                        <td style="text-align: center;">017</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">536</td>
+                        <td style="text-align: left">Troškovi istraživanja</td>
+                        <td style="text-align: center;">018</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">550 i 551</td>
+                        <td style="text-align: left">Troškovi neproizvodnih usluga i troškovi reprezentacije</td>
+                        <td style="text-align: center;">019</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">268242</td>
+                        <td style="text-align: right; padding-right: 8px">95632</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">552 i 553</td>
+                        <td style="text-align: left">Troškovi premija osiguranja i troškovi platnog prometa</td>
+                        <td style="text-align: center;">020</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px">6667</td>
+                        <td style="text-align: right; padding-right: 8px">1700</td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">573</td>
+                        <td style="text-align: left">Gubici od prodaje materijala</td>
+                        <td style="text-align: center;">021</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">10</td>
+                        <td style="text-align: left">Zalihe materijala</td>
+                        <td style="text-align: center;">022</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">11</td>
+                        <td style="text-align: left">Zalihe nedovršene proizvodnje</td>
+                        <td style="text-align: center;">023</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">12</td>
+                        <td style="text-align: left">Zalihe gotovih proizvoda</td>
+                        <td style="text-align: center;">024</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">13</td>
+                        <td style="text-align: left">Zalihe roba</td>
+                        <td style="text-align: center;">025</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left"></td>
+                        <td style="text-align: center;"></td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;"></td>
+                        <td style="text-align: left">Analiti?ki prikaz nematerijalne imovine pravnog lica</td>
+                        <td style="text-align: center;"></td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">652</td>
+                        <td style="text-align: left">Prihodi od naknade po osnovu patenata</td>
+                        <td style="text-align: center;">026</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">652</td>
+                        <td style="text-align: left">Prihodo po osnovu autorskih prava</td>
+                        <td style="text-align: center;">027</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">652</td>
+                        <td style="text-align: left">Prihodi od prodaje licenci</td>
+                        <td style="text-align: center;">028</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">010</td>
+                        <td style="text-align: left">Ulaganja u razvoj</td>
+                        <td style="text-align: center;">029</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0100</td>
+                        <td style="text-align: left">Ulaganja u razvoj tržišta, sa efektom dužim od jedne godine</td>
+                        <td style="text-align: center;">030</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0101</td>
+                        <td style="text-align: left">Ulaganja u razvoj tehnologije, sa efektom dužim od jedne godine</td>
+                        <td style="text-align: center;">031</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0102</td>
+                        <td style="text-align: left">Ulaganja u razvoj proizvoda, sa efektom dužim od jedne godine</td>
+                        <td style="text-align: center;">032</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0103</td>
+                        <td style="text-align: left">Ostali izdaci za razvoj</td>
+                        <td style="text-align: center;">033</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0108</td>
+                        <td style="text-align: left">Ispravka vrijednosti ulaganja u razvoj</td>
+                        <td style="text-align: center;">034</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0109</td>
+                        <td style="text-align: left">Obezvre?ivanje vrijednosti ulaganja u razvoj</td>
+                        <td style="text-align: center;">035</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">011</td>
+                        <td style="text-align: left">Koncesije, patenti, licence i sli?na prava</td>
+                        <td style="text-align: center;">036</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0110</td>
+                        <td style="text-align: left">Koncesije</td>
+                        <td style="text-align: center;">037</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0111</td>
+                        <td style="text-align: left">Patenti</td>
+                        <td style="text-align: center;">038</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0112</td>
+                        <td style="text-align: left">Licence</td>
+                        <td style="text-align: center;">039</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0113</td>
+                        <td style="text-align: left">Pravo na industrijski uzorak, žig, model, zaštitni znak i sl.</td>
+                        <td style="text-align: center;">040</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0114</td>
+                        <td style="text-align: left">Druga sli?na prava</td>
+                        <td style="text-align: center;">041</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0118</td>
+                        <td style="text-align: left">Ispravka vrijednosti koncesija, patenata, licenci i sli?nih prava</td>
+                        <td style="text-align: center;">042</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0119</td>
+                        <td style="text-align: left">Obezvre?ivanje koncesija, patenata, licenci i sli?nih prava</td>
+                        <td style="text-align: center;">043</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">012</td>
+                        <td style="text-align: left">Goodwill</td>
+                        <td style="text-align: center;">044</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0120</td>
+                        <td style="text-align: left">Goodwill nastao po osnovu ste?ene (pripojene) neto imovine drugog pravnog lica</td>
+                        <td style="text-align: center;">045</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0121</td>
+                        <td style="text-align: left">Goodwill nastao po osnovu kupovine akcija i udjela u drugom pravnom licu</td>
+                        <td style="text-align: center;">046</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0129</td>
+                        <td style="text-align: left">Obezvre?ivanje goodwill-a</td>
+                        <td style="text-align: center;">047</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">014</td>
+                        <td style="text-align: left">Ostala nematerijalna ulaganja</td>
+                        <td style="text-align: center;">048</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0140</td>
+                        <td style="text-align: left">Ra?unarski programi</td>
+                        <td style="text-align: center;">049</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0141</td>
+                        <td style="text-align: left">Pravo koriš?enja gradskog gra?evinskog zemljišta</td>
+                        <td style="text-align: center;">050</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0142</td>
+                        <td style="text-align: left">Ulaganja u lizing</td>
+                        <td style="text-align: center;">051</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0145</td>
+                        <td style="text-align: left">Ostala nematerijalna ulaganja</td>
+                        <td style="text-align: center;">052</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0148</td>
+                        <td style="text-align: left">Ispravka vrijednosti ostalih nematerijalnih ulaganja</td>
+                        <td style="text-align: center;">053</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0149</td>
+                        <td style="text-align: left">Obezvre?ivanje ostalih nematerijalnih ulaganja</td>
+                        <td style="text-align: center;">054</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">015</td>
+                        <td style="text-align: left">Nematerijalna ulaganja u pripremi</td>
+                        <td style="text-align: center;">055</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0150</td>
+                        <td style="text-align: left">Ulaganja u razvoj u pripremi</td>
+                        <td style="text-align: center;">056</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0151</td>
+                        <td style="text-align: left">Interno generisana nematerijalna ulaganja u pripremi</td>
+                        <td style="text-align: center;">057</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0155</td>
+                        <td style="text-align: left">Druga nematerijalna ulaganja u pripremi</td>
+                        <td style="text-align: center;">058</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0159</td>
+                        <td style="text-align: left">Obezvre?enje nematerijalnih ulaganja u pripremi</td>
+                        <td style="text-align: center;">059</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">016</td>
+                        <td style="text-align: left">Avansi za nematerijalna ulaganja</td>
+                        <td style="text-align: center;">060</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0160</td>
+                        <td style="text-align: left">Avansi za nematerijalna ulaganja u razvoj</td>
+                        <td style="text-align: center;">061</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center;">0161</td>
+                        <td style="text-align: left">Avansi za druga nematerijalna ulaganja</td>
+                        <td style="text-align: center;">062</td>
+                        <td></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                        <td style="text-align: right; padding-right: 8px"></td>
+                    </tr>
+            </table>
+        </div>
+
+        <div id="tab6" class="tab_content">
+            <div id="DivObracunAmortizacija">
+                <h4 style="text-align: center">OBRAČUN AMORTIZACIJA OSNOVNIH SREDSTAVA</h4>
+                <button type="button" id="btnFSPrint1" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/Print'+'?rbr='+'91445/2023'+
+                '&tip='+'ObracunAmortizacije';">
+                    ŠTAMPA
+                </button>
+                <table id="TObracunAmortizacija" class="FinStateTableItems" cellpadding="2" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th style="width: 5%">Broj grupe</th>
+                            <th style="width: 13%">Početni saldo</th>
+                            <th style="width: 13%">Kupovina sredstava koja se stavljaju u upotrebu</th>
+                            <th style="width: 13%">Prodaja sredstava tokom godine</th>
+                            <th style="width: 13%">
+                                Neotpisana vrjednost
+                                <br />
+                                (2+3-4)
+                            </th>
+                            <th style="width: 5%">Stopa %</th>
+                            <th style="width: 13%">
+                                Amortizacija
+                                <br />
+                                (5 x 6)
+                            </th>
+                            <th style="width: 13%">Neotpisana vrijednost na kraju godine (5 - 7)</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>I</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>II</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>III</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>IV</td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                            <td style="text-align: right;"></td>
+                        </tr>
+                        <tr>
+                            <td>V</td>
+                            <td style="text-align: right;">3038,98</td>
+                            <td style="text-align: right;">32757,75</td>
+                            <td style="text-align: right;">0</td>
+                            <td style="text-align: right;">35796,73</td>
+                            <td style="text-align: right;">30</td>
+                            <td style="text-align: right;">10739,02</td>
+                            <td style="text-align: right;">25057,71</td>
+                        </tr>
+                </table>
+            </div>
+        </div>
+
+            <div id="tab7" class="tab_content">
+                <table id="TStavkaNapomene" class="FinStateTableItems" cellpadding="2" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Naslov</th>
+                            <th>tip</th>
+                            <th>akcija</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>Napomene 2023</td>
+                            <td>.pdf</td>
+                            <td>
+                                <button type="button" id="btnNapomenaDownload" class="k-button" style="width: 200px; text-align: center" onclick="location.href='/TaxisPortal/FinancialStatement/StavkaNapomene?rbr=91445/2023&tip=.pdf&naslov=Napomene+2023';">
+                                    Preuzmi dokument
+                                </button>
+                            </td>
+                        </tr>
+                </table>
+            </div>
+    </div>
+    <script type="text/javascript">
+        $("#tabs_container").kendoTabStrip({ animation: { open: { effects: "fadeIn" } } });
+    </script>
+</div>
+<div id="portal-panel">
+    <div style="padding: 4px;">
+
+        <button type="button" id="btnFS" class="k-button" style="width: 200px; text-align: center" onclick="portal.page.load('/TaxisPortal/FinancialStatement/TaxPayerFS',{PIB:'03424804'},'FINANSIJSKI ISKAZI');">Lista finansijskih<br />iskaza obveznika</button>
+        <button type="button" id="btnHome" class="k-button" style="width: 200px; text-align: center" onclick="portal.page.load('/TaxisPortal/Portal/Meni',null,'TAXIS PORTAL - OSNOVNI MENI');">Naslovna</button>
+    </div>
+</div>
