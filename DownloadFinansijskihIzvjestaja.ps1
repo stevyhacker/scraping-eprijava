@@ -37,6 +37,12 @@ $companies.Add("03428184", "Tungsten Montenegro")
 $companies.Add("03110222", "BGS Consulting")
 $companies.Add("03413381", "Artec 3D Adriatica")
 $companies.Add("03413616", "Customertimes Montenegro")
+$companies.Add("03200116", "Codepixel")
+$companies.Add("03403912", "Codemine")
+$companies.Add("03418545", "Belka")
+$companies.Add("03489159", "Playrix")
+$companies.Add("03424804", "FSTR")
+$companies.Add("03442586", "Arctic 7")
 
 # Formiranje CSV fajla za smjestanje rezultata
 Set-Content -Path "./Results.csv" -Value '"name","Year","totalIncome","profit","employeeCount","netPayCosts","averagePay"'
