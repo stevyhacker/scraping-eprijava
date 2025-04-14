@@ -89,48 +89,7 @@ fn main() -> Result<()> {
 
     // --- Company List (from PowerShell script) ---
     let mut companies = HashMap::new();
-    companies.insert("03014215", "Coinis");
-    companies.insert("02686473", "Domen");
-    companies.insert("02775018", "CoreIT");
-    companies.insert("02632284", "Logate");
-    companies.insert("02783061", "Bild Studio");
-    companies.insert("02907259", "Amplitudo");
-    companies.insert("03073572", "Datum Solutions");
-    companies.insert("02713098", "Poslovna Inteligencija"); // Updated PIB
-    companies.insert("03037258", "International Bridge");
-    companies.insert("02731517", "Fleka");
-    companies.insert("02679744", "Datalab");
-    companies.insert("03167453", "Omnitech");
-    companies.insert("03131343", "SynergySuite");
-    companies.insert("03122123", "Alicorn"); // Updated PIB
-    companies.insert("03066258", "Codingo");
-    companies.insert("03274357", "Uhura Solutions");
-    companies.insert("02246244", "Winsoft");
-    companies.insert("02177579", "Cikom");
-    companies.insert("02961717", "Media Monkeys"); // Updated PIB
-    companies.insert("03091627", "Codeus");
-    companies.insert("03084434", "Digital Control");
-    companies.insert("03165663", "Ridgemax");
-    companies.insert("03360962", "Infinum");
-    companies.insert("03191451", "Kodio");
-    companies.insert("03381447", "EPAM");
-    companies.insert("03413772", "First Line Software");
-    companies.insert("03374700", "Vega IT Omega");
-    companies.insert("03373398", "Quantox Technology");
-    companies.insert("03216446", "Ooblee");
-    companies.insert("03209296", "BIXBIT");
-    companies.insert("03367053", "GoldBear Technologies");
-    companies.insert("03421198", "G5 Entertainment");
-    companies.insert("03428184", "Tungsten Montenegro");
-    companies.insert("03110222", "BGS Consulting");
-    companies.insert("03413381", "Artec 3D Adriatica");
-    companies.insert("03413616", "Customertimes Montenegro");
-    companies.insert("03200116", "Codepixel");
-    companies.insert("03403912", "Codemine");
-    companies.insert("03418545", "Belka");
-    companies.insert("03489159", "Playrix");
-    companies.insert("03424804", "FSTR");
-    companies.insert("03442586", "Arctic 7");
+    companies.insert("INSERT_PIB", "INSERT_COMPANY_NAME");
 
     // --- Setup CSV ---
     let csv_path = Path::new("./Results.csv");
