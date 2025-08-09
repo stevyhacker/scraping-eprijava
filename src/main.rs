@@ -131,6 +131,7 @@ fn main() -> Result<()> {
     companies.insert("03489159", "Playrix");
     companies.insert("03424804", "FSTR");
     companies.insert("03442586", "Arctic 7");
+    companies.insert("03480950", "Citrus Codes");
 
     // --- Setup CSV ---
     let csv_path = Path::new("./Results.csv");

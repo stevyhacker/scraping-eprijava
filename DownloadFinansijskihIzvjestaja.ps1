@@ -42,6 +42,7 @@ $companies.Add("03418545", "Belka")
 $companies.Add("03489159", "Playrix")
 $companies.Add("03424804", "FSTR")
 $companies.Add("03442586", "Arctic 7")
+$companies.Add("03480950", "Citrus Codes")
 
 # Formiranje CSV fajla za smjestanje rezultata
 Set-Content -Path "./Results.csv" -Value '"name","Year","totalIncome","profit","employeeCount","netPayCosts","averagePay"'
